@@ -1,11 +1,54 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Pastelería Dulce Sabor | Pasteles artesanales" description="Pastelería Dulce Sabor: pasteles artesanales, postres y cupcakes para celebrar momentos especiales.">
+  <main class="site-main">
+    <section class="hero">
+      <p class="hero__tag">Desde 2015 endulzando tus momentos</p>
+      <h1>Pastelería Dulce Sabor</h1>
+      <p class="hero__text">
+        Horneamos pasteles artesanales, cupcakes y postres personalizados con
+        ingredientes frescos y mucho cariño.
+      </p>
+      <a class="btn-primary" href="#contacto">Haz tu pedido</a>
+    </section>
+
+    <section class="section" id="productos">
+      <h2>Productos destacados</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pastel de Chocolate Premium</h3>
+          <p>Bizcocho húmedo con ganache de chocolate semiamargo.</p>
+        </article>
+        <article class="card">
+          <h3>Cupcakes de Vainilla</h3>
+          <p>Pack de 6 con crema de mantequilla y toppings de temporada.</p>
+        </article>
+        <article class="card">
+          <h3>Tarta de Frutos Rojos</h3>
+          <p>Base crujiente, crema pastelera y frutas frescas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Somos un equipo apasionado por la repostería artesanal. Cada creación
+        está pensada para convertir tus celebraciones en recuerdos inolvidables.
+      </p>
+    </section>
+
+    <section class="section" id="contacto">
+      <h2>Contacto</h2>
+      <p>Visítanos o escríbenos para cotizar tu pedido personalizado.</p>
+      <ul class="contact-list">
+        <li><strong>Dirección:</strong> Av. Principal 123, Centro</li>
+        <li><strong>Teléfono:</strong> +52 55 1234 5678</li>
+        <li><strong>Email:</strong> hola@dulcesabor.com</li>
+        <li><strong>Horario:</strong> Lunes a Sábado, 9:00 a 19:00</li>
+      </ul>
+    </section>
+  </main>
 </Layout>
